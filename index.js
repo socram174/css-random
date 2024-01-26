@@ -21,3 +21,23 @@ nav.addEventListener("click",() => {
         link.classList.remove("active");
     })
 })
+
+document.addEventListener("keydown",(e)=>{
+    if(e.key === "b"){
+        nav.classList.remove("closed");
+        nav.classList.add("active");
+        links.forEach((link)=> {
+            link.classList.add("active");
+        })
+    }
+})
+
+document.addEventListener("keydown",(e)=>{
+    if(e.key === "c"){
+        nav.classList.remove("active");
+        nav.classList.add("closed");
+        links.forEach((link)=> {
+            link.classList.remove("active");
+        })
+    }
+})

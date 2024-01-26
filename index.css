@@ -30,14 +30,15 @@ html, body{
     width: 200px;
     top: 0;
     right: -230px;
-    background-color: white;
+    background-color: black;
     position: fixed;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 2px solid red;
     align-items: end;
+    opacity: 50%;
+    gap: 15px;
 }
 
 .nav.active{
@@ -61,8 +62,8 @@ button{
     position: fixed;
     top:90%;
     left: 5%;
-    padding: 30px;
-    border-radius: 50%;
+    padding: 15px;
+    border-radius: 15%;
 }
 
 #parallax {
@@ -76,4 +77,12 @@ button{
 
 #principal {
     padding: 10%;
+}
+
+a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: beige;
+    padding: 5%;
 }
