@@ -47,7 +47,7 @@ html, body{
 }
 
 a.active{
-    transform: translateX(-150%);
+    transform: translateX(-15%);
     transition: transform 1s;
     transition-delay: .5s;
 }
@@ -85,4 +85,5 @@ a {
     text-decoration: none;
     background-color: beige;
     padding: 5%;
+    width: 90%;
 }
