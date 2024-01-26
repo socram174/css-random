@@ -37,6 +37,7 @@ html, body{
     flex-direction: column;
     padding: 10px;
     border: 2px solid red;
+    align-items: end;
 }
 
 .nav.active{
@@ -44,9 +45,16 @@ html, body{
     transition: transform 1s;
 }
 
+a.active{
+    transform: translateX(-150%);
+    transition: transform 1s;
+    transition-delay: .5s;
+}
+
 .nav.closed {
     transform: 100%;
-    transition: transform 1s;
+    align-items: end;
+    transition: transform 1s, align-items 2s;
 }
 
 button{
@@ -64,4 +72,8 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
+}
+
+#principal {
+    padding: 10%;
 }
